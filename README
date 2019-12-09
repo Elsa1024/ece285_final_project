@@ -21,7 +21,7 @@ Code organization
 Demo/       --  Run a demo of our code (for comparing small vocabulary model and large vocabulary model mainly)
 
 Data/
-1.Download cocodataset and make sure the iamges are in './data/images', and annotations are in './data/annotations'
+1.Download cocodataset and make sure the images are in './data/images', and annotations are in './data/annotations'
 
 2.Follow the following steps if you need split the data (you may need change the directories or proportions)
 cd ./data
