@@ -28,13 +28,17 @@ cd ./data
 python3 split_data.py
 python3 filter_annotations.py
 
+Train/
+small_vocab_training.ipynb                               -- Train for small vocabulary model
+                                                         -- Make sure you set the right directories in 'data_loader.py'
+                                                         -- The other training for big vocabulary is different in data set and epoch
+                                                         -- Refer our report for details
+model.py                                                 -- Model
+data_loader.py                                           -- Data Loader
+vocabulary.py                                            -- Vocabulary class
+
 Evaluation/
 evaluation_generate_result.ipynb                         -- Generate the result json files
                                                          -- Make sure you copy everything in 'Train/' here except the training notebook, including the vocabulary.pkl generated after training
 small_evaluation_val.ipynb, large_evaluation_test.ipynb  -- Generate the evaluation scores, make sure you put them in './pycocoevalcap/'
 plot.ipynb                                               -- Plot the loss graphs
-
-Train/
-small_vocab_training.ipynb                               -- Train for small vocabulary model
-                                                         -- Make sure you set the right directories in 'data_loader.py'
-                                                         -- The other training for big vocabulary is different in data set and epoch, refer our report for details
